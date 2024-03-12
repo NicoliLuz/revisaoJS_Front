@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisãoJS_Front</title>
+</head>
+<body>
+    <button id="botao">Contador de Click</button>
+    <input type="text" value="0" id="cont">
+
+    <script>
+        const input = document.getElementById("cont");
+        const botao = document.getElementById("botao");
+        botao.onclick = function(event) {
+            input.value++;
+        }
+
+    </script>
+</body>
+</html>

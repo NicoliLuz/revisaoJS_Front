@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisãoJS_Front</title>
+</head>
+<body>
+    <script>
+        alert("Olá, usuário!");
+
+        function exibirNome(){
+            var nome = document.getElementById('nome').value;
+        }
+        const Seunome = prompt("Digite seu nome completo:");
+        alert("Seu nome é: " + Seunome);
+
+        const QuantidadeLetras = Seunome.replace(/\s/g, "").length;
+        alert("Quantidade de letras do seu nome é: " + QuantidadeLetras);
+
+
+    </script>
+</body>
+</html>
