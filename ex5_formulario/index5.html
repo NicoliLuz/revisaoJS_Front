@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisãoJS_Front</title>
+</head>
+<style>
+    .erro{
+        border-color: red;
+    }
+
+</style>
+<body>
+    
+    <form id="formulario">
+        <input type="text" id="input" placeholder="Digite seu nome!"> <!--placeholder é um atributo HTML, fornece um texto no campo de entrada-->
+        <button type="button"
+        onclick="validateInput()">Verificação</button> 
+    </form>
+
+    <script>
+        function validateInput(){
+            const inputField = document.getElementById('input'); //inputField é uma variável JS que armazena uma refência ao elemento HTML com ID
+            console.log("Campo")
+
+            if (inputField.value === ''){
+                console.log("Campo Vazio");
+                inputField.classList.add('erro'); //classList é uma propriedade da DOM (HTML), essa propriedade oferece métodos para adicionar, remover e verificar a presença de classes no HTML
+            } else {
+                console.log("Preenchido");
+                inputField.classList.remote('erro');
+            }
+        }
+    </script>
+</body>
+</html>

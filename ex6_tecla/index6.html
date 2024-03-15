@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisãoJS_Front</title>
+</head>
+<body>
+    <input type="text" id="input"
+    onkeypress="onKey()"> <!--onkeypress é um atributo de evento que executa uma função JS quando uma tecla é pressionada-->
+
+    <script>
+        function onKey(){
+            alert("Você pressionou a tecla: " + event.key); //exibe qual a tecla pressionada pelo usuário
+        }
+    </script>
+</body>
+</html>

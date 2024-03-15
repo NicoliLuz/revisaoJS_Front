@@ -6,9 +6,15 @@
     <title>revisãoJS_Front</title>
 </head>
 <body>
-    <button id="Myclick">Click Aqui</button>
-    <script>
+    <button id="MyclickHTML"
+    onclick = "alert('Você apertou o botão HTML!')">Click Aqui</button>
 
+    <button id="MyclickJS">Click Aqui</button>
+
+    <script>
+        document.getElementById("MyclickJS").addEventListener("click", function(){
+            alert("Você apertou o botão JS!");
+        })
     </script>
 </body>
 </html>
