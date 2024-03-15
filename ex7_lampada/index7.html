@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisãoJS_Front</title>
+</head>
+<style>
+    .classe-do-elemento{
+        background-image: url(lampada.png);
+        width: 20px;
+        height: 20px;
+    }
+</style>
+<body>
+    <img src="lampadaApagada.png" id="lampada1">
+
+    <script>
+        const lampada = document.getElementById("lampada1");
+
+        lampada.onmouseover = function(evento){
+            lampada.src = "lampadaApagada.png";
+        }
+
+        lampada.onmouseover = function(evento){
+            lampada.src = "lampada.png";
+        }
+    </script>
+</body>
+</html>
